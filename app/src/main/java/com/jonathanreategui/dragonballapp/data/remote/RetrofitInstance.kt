@@ -1,4 +1,4 @@
-package com.jonathanreategui.dragonballapp.data
+package com.jonathanreategui.dragonballapp.data.remote
 
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
