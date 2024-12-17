@@ -3,7 +3,7 @@ package com.jonathanreategui.dragonballapp.data.models
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class CharacterResponse(
+data class CharactersResponse(
     val items: List<DragonBallCharacter>,
     val meta: Meta,
     val links: Links
