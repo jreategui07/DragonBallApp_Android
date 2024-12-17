@@ -2,4 +2,6 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
+    // Plugin for Kotlin serialization
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
 }
