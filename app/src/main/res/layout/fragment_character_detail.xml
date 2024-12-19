@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.CharacterDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageCharacter"
+                android:layout_width="250dp"
+                android:layout_height="370dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/textCharacterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="Goku"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textCharacterRace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Race: Saiyan"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textCharacterAffiliation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Affiliation: Z Fighter"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textCharacterGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender: Male"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textCharacterKi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ki: 60,000,000 / Max Ki: 90 Septillion"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/textCharacterDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El protagonista de la serie, conocido por su gran poder y personalidad amigable..."
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
