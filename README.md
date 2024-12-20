@@ -54,6 +54,11 @@ This Android application showcases a list of Dragon Ball characters and their de
     <td>Bind data to UI components and set up observers or listeners.</td>
   </tr>
   <tr>
+    <td>onViewStateRestored()</td>
+    <td>Called after the fragment's view has been created and state is restored.</td>
+    <td>Restore UI state, such as scroll position or input fields.</td>
+  </tr>
+  <tr>
     <td>onStart()</td>
     <td>The fragment becomes visible to the user.</td>
     <td>Start animations or refresh UI components.</td>

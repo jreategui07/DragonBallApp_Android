@@ -54,41 +54,46 @@ class CharacterListFragment : Fragment() {
         }
     }
 
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+        Log.d(TAG, "#5: onViewStateRestored called")
+    }
+
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "#5: onStart called")
+        Log.d(TAG, "#6: onStart called")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "#6: onResume called")
+        Log.d(TAG, "#7: onResume called")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(TAG, "#7: onPause called")
+        Log.d(TAG, "#8: onPause called")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "#8: onStop called")
+        Log.d(TAG, "#9: onStop called")
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d(TAG, "#9: onDestroyView called")
+        Log.d(TAG, "#10: onDestroyView called")
         binding.recyclerViewCharacters.adapter = null
         _binding = null
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(TAG, "#10: onDestroy called")
+        Log.d(TAG, "#11: onDestroy called")
     }
 
     override fun onDetach() {
         super.onDetach()
-        Log.d(TAG, "#11: onDetach called")
+        Log.d(TAG, "#12: onDetach called")
     }
 
     private fun setupRecyclerView() {
